@@ -1,0 +1,323 @@
+::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgba(245, 245, 245, 0.794);
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+/* Scroolbar*/ 
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: black;
+}
+::-webkit-scrollbar
+{
+    
+	width: 5px;
+	background-color: white;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background:  linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 74%);	
+}
+
+/* Scroolbar bitiş*/
+
+
+/* HEADER */
+
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    border-bottom: 3px solid white;
+}
+
+#menu_bar{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 30px 0;
+}
+
+.menu_link{
+    display: flex;
+}
+
+.menu_link li a{
+    font-weight: bold;
+    position: relative;
+    margin-left: 25px;
+    color: white;
+    padding: 5px 2px;
+    
+}
+
+.menu_link li a::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.menu_link li a:hover{
+    color: white;
+}
+
+.menu_link li a:hover:after{
+    width: 100%;
+
+}
+
+.logo h2 a{
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Navbar bitiş*/
+
+/* Anasayfa */
+
+
+.ic_sayfa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+}
+ 
+.icerik{
+    flex-basis: 45%; 
+}
+
+.icerik h1{
+   font-size: 50px;
+   color: white; 
+}
+
+.ic_span{
+    color: white;
+}
+
+.icerik img{
+    min-width: 345px;
+    min-height: 345px;
+}
+
+.icerik p{
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+
+/* Anasayfa Bitiş */
+
+/* Hizmetler */
+
+.ic_hizmet{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.icerik_hizmet{
+    min-width: 177px;
+    min-height: 137px;
+    max-width: 351px;
+    max-height: 137px;
+    margin: 5px auto;
+    flex-basis: 31%;
+    padding: 25px 20px;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    border: 1px solid white;    
+    transition: all .5s ease-in-out;
+}
+
+.icerik_hizmet a{
+    text-decoration: none;
+    color: white;
+}
+.icerik_hizmet:hover a{
+    color: black;
+    transition: all .2s ease-in-out;
+}
+
+.icerik_hizmet:hover{
+    
+    color: black;
+    background: white;
+    border: 1px solid black;
+    
+}
+
+.icerik_hizmet .ikon{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    transition: all .5s ease-in-out;
+
+}
+
+.icerik_hizmet:hover i{
+    transition: all .2s ease-in-out;
+    color: black;
+}
+
+
+
+.icerik_hizmet h4{
+    text-align: center;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.icerik_hizmet p{
+    font-size: 15px;
+}
+/* Hizmetler Bitiş*/
+
+/* Çözüm Ortakları*/
+.ic_cozumortaklari{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.ortak_logo img{
+    width: 200px;
+    height: 150px;
+}
+
+.icerik_cozumortaklari{
+    margin: 10px auto;
+    flex-basis: 20%;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    transition: .3s all ease-in-out;
+}
+
+.icerik_cozumortaklari:hover{
+    transform: scale(1.1);
+}
+
+/* Çözüm Ortakları Bitiş*/
+
+/* Hakkımızda */
+
+
+
+.ic_hakkimizda{
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.icerik_hakkimizda p{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+/* Hakkımızda Bitiş*/
+
+/* İletişim */
+
+.ic_iletisim{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.icerik_iletisim{
+    flex-basis: 45%;
+}
+
+.icerik_iletisim form{
+    padding: 50px 40px;
+    background: black;
+    border-radius: 5px;
+}
+
+.icerik_iletisim form input,textarea{
+    width: 100%;
+    padding: 10px auto;
+    margin-bottom: 20px;
+    color: white;
+    background:transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid white;
+    resize: none;
+    transition: .3s ease-in;
+}
+
+
+
+
+
+/* İletişim Bitiş*/
+
+
+/* Preloader */
+#loader{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+}
+#animasyon{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+#animasyon-yazi{
+    color: white;
+    font-size: 40px;
+}
+/* Preloader Bitiş*/
